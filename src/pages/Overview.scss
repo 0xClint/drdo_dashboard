@@ -1,0 +1,26 @@
+@import "../App.scss";
+
+.overview {
+  padding: 3rem;
+
+  .headingOverview {
+    background-color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .overviewCardContainer {
+    margin: 2rem 0;
+    border-radius: 15px;
+    @include Flex();
+    gap: 2rem;
+    .card {
+      border-radius: 15px;
+      width: 230px;
+      height: 200px;
+      background-color: white;
+    }
+  }
+}

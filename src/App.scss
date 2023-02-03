@@ -1,0 +1,53 @@
+$primary-color: #5932ea;
+$dark-green: #248277;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+
+  .app {
+    display: flex;
+    width: 100vw;
+  }
+
+  .btn {
+    width: 150px;
+    background-color: $primary-color;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #3f15d8;
+    }
+  }
+
+  .inputText {
+    border-radius: 10px;
+    background: white;
+    border: 1px solid rgb(246, 246, 246);
+    font-size: 16px;
+    height: 40px;
+    line-height: 24px;
+    padding: 0 8px;
+    color: rgb(8, 9, 10);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+}
+
+@mixin Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin Margin {
+  margin: 2rem 7.5rem;
+}

@@ -1,0 +1,58 @@
+@import "../App.scss";
+
+.sidebar {
+  // position: fixed;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
+  width: 330px;
+  height: 100vh;
+  .logo {
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 1.8rem;
+    display: flex;
+    gap: 1rem;
+
+    .partition{
+      height: 70px;
+      width: 2px;
+      background-color: rgb(155, 155, 155);
+    }
+    .logo_2{
+      height: 70px;
+      width: 70px;
+      background-color: blueviolet;
+      border-radius: 50%;
+    }
+  }
+  .sectionContainer {
+    // margin: 1rem 0 0 1.8rem;
+    list-style: none;
+    @include Flex();
+    flex-direction: column;
+    // align-items: flex-start;
+    gap: 1rem;
+
+    .sectionElement {
+      text-decoration: none;
+      width: 95%;
+      height: 60px;
+      @include Flex();
+      border-radius: 10px;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      font-size: 1.1rem;
+      color: rgb(43, 43, 56);
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(246, 246, 246);
+      }
+
+      .sectionIcon {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}

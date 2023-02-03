@@ -1,0 +1,39 @@
+@import "../App.scss";
+
+.scrap {
+  padding: 2rem 3rem 0rem 3rem;
+
+  .headingScrap {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .scrapform {
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem 4rem;
+    border-radius: 15px;
+    @include Flex();
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .title {
+      font-size: 1.1rem;
+    }
+    .titleInput {
+      width: 500px;
+    }
+
+    .scrapbtn {
+      margin: 3rem 0 2rem 0;
+    }
+  }
+}
