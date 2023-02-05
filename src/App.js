@@ -5,6 +5,8 @@ import { useStateContext } from "./contexts/ContextProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Overview from "./pages/Overview";
 import Scrap from "./pages/Scrap";
+import LocationAnalytics from "./pages/LocationAnalytics";
+import RealTimeMap from "./pages/RealTimeMap";
 
 function App() {
   const { isSidebar, isNavbar, isAdmin, setIsAdmin, setisSidebar } =
@@ -18,7 +20,9 @@ function App() {
           <div className="mainSection">
             <Routes>
               <Route path="/" element={<Overview />} />
-              <Route path="/scrap" element={<Scrap />} />
+              {/* <Route path="/scrap" element={<Scrap />} /> */}
+              <Route path="/location" element={<LocationAnalytics />} />
+              <Route path="/realtimemap" element={<RealTimeMap />} />
             </Routes>
           </div>
         </div>

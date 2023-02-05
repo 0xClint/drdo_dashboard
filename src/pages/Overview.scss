@@ -2,12 +2,13 @@
 
 .overview {
   padding: 3rem;
+  padding-top: 1rem;
 
   .headingOverview {
     background-color: white;
-    padding: 1.2rem 2rem;
-    border-radius: 15px;
-    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
     font-weight: 700;
   }
 
@@ -17,10 +18,93 @@
     @include Flex();
     gap: 2rem;
     .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.3rem;
       border-radius: 15px;
       width: 230px;
       height: 200px;
       background-color: white;
+      border: 1px rgb(224, 224, 224) solid;
+
+      .circle {
+        height: 55px;
+        width: 55px;
+        background-color: #6198ff;
+        border-radius: 50%;
+        // margin-left: 1rem;
+        margin-left: 1rem;
+        // margin-top: 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 650;
+        margin-left: 1.3rem;
+        margin: 0;
+        line-height: 30px;
+        margin: 0.6rem 1.5rem 0rem 1.5rem;
+      }
+      .title {
+        font-size: 0.9rem;
+        margin: 0;
+        margin-left: 1.5rem;
+        color: rgb(153, 153, 153);
+      }
+      .subTitle {
+        margin: 0;
+        margin-left: 1.3rem;
+      }
+    }
+  }
+
+  .trafficePoles {
+    .heading {
+      margin-left: 2.5rem;
+    }
+    .analyseContainer {
+      @include Flex();
+      gap: 1.8rem;
+      .analyseCard {
+        width: 350px;
+        height: 250px;
+        display: flex;
+        gap: 0.6rem;
+        flex-direction: column;
+        background-color: white;
+        border: 1px rgb(224, 224, 224) solid;
+        border-radius: 15px;
+        h2 {
+          text-align: center;
+          font-weight: 600;
+          font-size: 1.4rem;
+        }
+        .coordinateContainer {
+          @include Flex();
+          .icons {
+            font-size: 30px;
+            font-weight: 300;
+            color: #2773ff;
+          }
+          .leftCoordinate {
+            @include Flex();
+            flex-direction: column;
+            width: 50%;
+            border-right: 1px rgb(224, 224, 224) solid;
+          }
+          .rightCoordinate {
+            @include Flex();
+            flex-direction: column;
+            width: 50%;
+          }
+        }
+        .region {
+          text-align: center;
+          font-weight: 500;
+          color: rgb(153, 153, 153);
+        }
+      }
     }
   }
 }

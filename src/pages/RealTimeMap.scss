@@ -1,0 +1,19 @@
+@import "../App.scss";
+
+.realTimeMap {
+  padding: 1rem 3rem 2rem 3rem;
+  .headinglocation {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .mapSection {
+    background-color: #ffa2a2;
+    margin-top: 2rem;
+    border-radius: 10px;
+    @include Flex();
+    height: 500px;
+  }
+}
