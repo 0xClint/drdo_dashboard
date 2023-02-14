@@ -1,11 +1,11 @@
 @import "../App.scss";
 
 .sidebar {
-  // position: fixed;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
-  width: 330px;
+  width: 280px;
   height: 100vh;
+  // position: fixed;
   .logo {
     font-weight: 800;
     font-size: 2rem;
@@ -13,12 +13,12 @@
     display: flex;
     gap: 1rem;
 
-    .partition{
+    .partition {
       height: 70px;
       width: 2px;
       background-color: rgb(155, 155, 155);
     }
-    .logo_2{
+    .logo_2 {
       height: 70px;
       width: 70px;
       background-color: blueviolet;

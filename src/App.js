@@ -14,7 +14,11 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        {isSidebar && <Sidebar />}
+        {isSidebar && (
+          <div style={{ position: "static" }}>
+            <Sidebar />
+          </div>
+        )}
         <div style={{ width: "100%" }}>
           <Navbar />
           <div className="mainSection">

@@ -1,7 +1,8 @@
 import React from "react";
 import "./LocationAnalytics.scss";
 import { MdSettingsInputAntenna } from "react-icons/md";
-import { AiFillCar } from "react-icons/ai";
+import { GiHumanTarget } from "react-icons/gi";
+import MapTool from "../components/MapTool";
 
 const LocationAnalytics = () => {
   return (
@@ -32,10 +33,10 @@ const LocationAnalytics = () => {
               </p>
             </div>
             <div className="device">
-              <AiFillCar style={{ fontSize: "1.7rem" }} />
+              <GiHumanTarget style={{ fontSize: "1.8rem" }} />
               <p className="count">0</p>
               <p className="poleTitle">
-                Poles
+                Enemy
                 <br /> Passed
               </p>
             </div>
@@ -43,7 +44,14 @@ const LocationAnalytics = () => {
           <div className="profile"></div>
         </div>
       </div>
-      <div className="mapContainer">MAP</div>
+      <div className="mapContainer">
+        <MapTool
+          cX={29.86263003518456}
+          cY={77.89486832948207}
+          zoomAmount={25}
+          scrollZoom={true}
+        />
+      </div>
     </div>
   );
 };

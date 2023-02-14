@@ -4,6 +4,10 @@
   padding: 3rem;
   padding-top: 1rem;
 
+  .heading {
+    margin-left: 0rem;
+  }
+
   .headingOverview {
     background-color: white;
     padding: 1rem 2rem;
@@ -50,7 +54,7 @@
         font-size: 0.9rem;
         margin: 0;
         margin-left: 1.5rem;
-        color: rgb(153, 153, 153);
+        color: rgb(108, 108, 108);
       }
       .subTitle {
         margin: 0;
@@ -60,9 +64,6 @@
   }
 
   .trafficePoles {
-    .heading {
-      margin-left: 2.5rem;
-    }
     .analyseContainer {
       @include Flex();
       gap: 1.8rem;
@@ -105,6 +106,15 @@
           color: rgb(153, 153, 153);
         }
       }
+    }
+  }
+
+  .overviewMap {
+    margin-top: 3rem;
+    .overviewMapContainer {
+      // margin-left: 2rem;
+      height: 400px;
+      // width: 95%;
     }
   }
 }
