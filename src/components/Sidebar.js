@@ -11,7 +11,6 @@ const Sidebar = () => {
       <div className="logo">
         <img src={require("../assets/drdo_logo.jpg")} width={70}></img>
         <div className="partition"></div>
-        {/* <div className="logo_2"></div> */}
         <img
           src={require("../assets/linearAmptech logo.jpg")}
           width={110}

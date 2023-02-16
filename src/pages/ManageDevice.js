@@ -1,7 +1,6 @@
 import React from "react";
 import "./ManageDevice.scss";
-import { DataGrid, GridToolbar } from "@mui/x-data-grid";
-import { Box } from "@mui/system";
+import { DataGrid } from "@mui/x-data-grid";
 
 const data = [
   {
