@@ -7,6 +7,7 @@ import Overview from "./pages/Overview";
 import Scrap from "./pages/Scrap";
 import LocationAnalytics from "./pages/LocationAnalytics";
 import RealTimeMap from "./pages/RealTimeMap";
+import ManageDevice from "./pages/ManageDevice";
 
 function App() {
   const { isSidebar, isNavbar, isAdmin, setIsAdmin, setisSidebar } =
@@ -27,6 +28,7 @@ function App() {
               {/* <Route path="/scrap" element={<Scrap />} /> */}
               <Route path="/location" element={<LocationAnalytics />} />
               <Route path="/realtimemap" element={<RealTimeMap />} />
+              <Route path="/manage-device" element={<ManageDevice />} />
             </Routes>
           </div>
         </div>

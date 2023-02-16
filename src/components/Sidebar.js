@@ -1,7 +1,8 @@
 import React from "react";
 import "./Sidebar.scss";
-import { MdOutlineSpaceDashboard } from "react-icons/md";
-import { TbBuildingSkyscraper } from "react-icons/tb";
+import { MdOutlineSpaceDashboard, MdDeviceHub } from "react-icons/md";
+import { TbDeviceDesktopAnalytics } from "react-icons/tb";
+import { DiGoogleAnalytics } from "react-icons/di";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -21,14 +22,15 @@ const Sidebar = () => {
           <MdOutlineSpaceDashboard className="sectionIcon" /> Dashboard
         </Link>
         <Link to="/location" className="sectionElement">
-          <TbBuildingSkyscraper className="sectionIcon" /> Location analytics
+          <TbDeviceDesktopAnalytics className="sectionIcon" /> Location
+          analytics
         </Link>
         <Link to="/realtimemap" className="sectionElement">
-          <TbBuildingSkyscraper className="sectionIcon" /> Realtime Map
+          <DiGoogleAnalytics className="sectionIcon" /> Realtime Map
         </Link>
-        <li className="sectionElement">
-          <MdOutlineSpaceDashboard className="sectionIcon" /> Manage Device
-        </li>
+        <Link to="/manage-device" className="sectionElement">
+          <MdDeviceHub className="sectionIcon" /> Manage Device
+        </Link>
       </div>
     </div>
   );
